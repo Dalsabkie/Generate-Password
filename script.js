@@ -32,8 +32,8 @@ function generatePassword() {
     return;
   }
 
-  if (passwordLength < 8 || passwordLength > 128) {
-    window.alert("Password length must be between 8 and 128 characters")
+  if (passwordLength < 8 || passwordLength > 100) {
+    window.alert("Password length must be between 8 and 100 characters")
     return;
   }
 
@@ -101,4 +101,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);  // when user clicks button, will call write password function
+generateBtn.addEventListener("click", writePassword); 
